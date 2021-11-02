@@ -1,6 +1,6 @@
-import { find } from './back/models/Product.js'
+import { find } from '/Product.js'
 
-import { findById } from './back/models/Product.js'
+import { findById } from './Product.js'
 
 function test()
 {
