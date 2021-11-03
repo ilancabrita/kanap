@@ -1,6 +1,6 @@
-import { find } from '/Product.js'
+import './product.js'
 
-import { findById } from './Product.js'
+import './product.js'
 
 function test()
 {
