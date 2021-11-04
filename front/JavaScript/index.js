@@ -1,9 +1,7 @@
-import './product.js'
+import { find , findById , product }
 
-import './product.js'
 
-function test()
-{
+function () {
   alert("test");
 }
 

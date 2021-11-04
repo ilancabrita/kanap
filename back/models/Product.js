@@ -81,12 +81,12 @@ const products =
   }
 ];
 
-export function find()
+function find()
 {
   return new Promise((resolve, reject) => resolve(JSON.parse(JSON.stringify(products))));
 }
 
-export function findById(id)
+function findById(id)
 {
   return new Promise((resolve, reject) =>
     resolve(JSON.parse(JSON.stringify(products)).find(product =>
@@ -95,6 +95,4 @@ export function findById(id)
   );
 }
 
-
-
-
+export { find , findById , product }
