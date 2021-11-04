@@ -1,7 +1,9 @@
-import { find , findById , product }
+import { find , findById , product } from 'Product'
+let val = find();
+let val = findById();
+let val = product()
 
-
-function () {
+unction () 
+{
   alert("test");
 }
-
