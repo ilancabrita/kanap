@@ -3,7 +3,10 @@ let val = find();
 let val = findById();
 let val = product()
 
-unction () 
+function () 
 {
-  alert("test");
+  fetch('http://localhost:3000/api/products')
+    .then(response => response.json())
+    .then(data => console.log(JSON.stringify(data)))
 }
+
