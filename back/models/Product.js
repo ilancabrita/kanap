@@ -39,7 +39,7 @@ const products =
     "description": "Donec mattis nisl tortor, nec blandit sapien fermentum at. Proin hendrerit efficitur fringilla. Lorem ipsum dolor sit amet.",
     "altTxt": "Photo d'un canapé rose, une à deux place"
   },
-
+  
   {
     "colors": ["Grey", "Purple", "Blue"],
     "_id": "8906dfda133f4c20a9d0e34f18adcf06",
@@ -81,12 +81,12 @@ const products =
   }
 ];
 
-function find()
+exports.find = () => 
 {
   return new Promise((resolve, reject) => resolve(JSON.parse(JSON.stringify(products))));
 }
 
-function findById(id)
+exports.findById = (id) => 
 {
   return new Promise((resolve, reject) =>
     resolve(JSON.parse(JSON.stringify(products)).find(product =>
@@ -94,5 +94,3 @@ function findById(id)
     )
   );
 }
-
-export { find , findById , product }
