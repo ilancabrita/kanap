@@ -23,3 +23,5 @@ function product()
     .then(response => response.json())
     .then(data => console.log(JSON.stringify(data)))
 }
+
+import.getAllProducts
