@@ -1,4 +1,4 @@
-import { find , findById , product } from 'Product';
+import { find , findById , product } from 'Product.js';
 let val = find();
 let val = findById();
 let val = product();
@@ -24,13 +24,21 @@ function product()
     .then(data => console.log(JSON.stringify(data)))
 }
 
-
 import.getAllProducts
 
-for (let items=0; items<product.length; items=kanap+1);
+for (let items=0; items<8; items=items+1);
 {
-  const node = document.createTextNode(product[items]);
-  const element = document.getElementById("items");
+  displayInfromation("imageUrl", "imageUrl")
+  displayInfromation("altTxt", "altTxt")
+  displayInfromation("name", "name")
+  displayInfromation("description", "description")
+  displayInfromation("colors", "colors")
+  displayInfromation("price", "price")
+
+  function displayInfromation(id, value)
+  {
+    document.getElementById(id).innerHTML = value
+  }
 
 /*  document.getElementById("imageUrl").innerHTML= "imageUrl"
   document.getElementById("altTxt").innerHTML= "altTxt"
