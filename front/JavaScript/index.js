@@ -26,8 +26,10 @@ function product()
 
 import.getAllProducts
 
-for (let items=0; items<8; items=items+1);
+for (let items=0; items<url.length; items=items+1);
 {
+  const product = 
+
   displayInfromation("imageUrl", "imageUrl")
   displayInfromation("altTxt", "altTxt")
   displayInfromation("name", "name")
