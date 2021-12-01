@@ -24,8 +24,6 @@ function product()
     .then(data => console.log(JSON.stringify(data)))
 }
 
-import.getAllProducts
-
 for (let items=0; items<url.length; items=items+1);
 {
   const product = 
