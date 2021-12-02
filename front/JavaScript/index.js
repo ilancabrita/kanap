@@ -24,9 +24,10 @@ function product()
     .then(data => console.log(JSON.stringify(data)))
 }
 
+import { products } from './back/models/Product.js';
+
 for (let items=0; items<url.length; items=items+1);
 {
-  const product = 
 
   displayInfromation("imageUrl", "imageUrl")
   displayInfromation("altTxt", "altTxt")
