@@ -13,8 +13,7 @@ exports.getAllProducts = (req, res, next) =>
       });
       res.status(200).json(mappedProducts);
     }
-  ).catch(
-    () => 
+  ).catch(() => 
     {
       res.status(500).send(new Error('Database error!'));
     }

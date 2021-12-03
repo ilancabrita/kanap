@@ -94,5 +94,3 @@ export function findById(id)
     )
   );
 }
-
-export { products };
