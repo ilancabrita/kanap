@@ -19,38 +19,30 @@ function findById()
     .then(data => console.log(JSON.stringify(data)))
 }
 
+
+
 function product()
 {
   fetch('http://localhost:3000/api/products')
     .then(response => response.json())
     .then(data => console.log(JSON.stringify(data)))
 
+    let clone = document.getElementById("items")
+
     for (let i=0; i<data.length; i=i+1);
-    {
-    
-      displayInfromation("imageUrl", "imageUrl")
-      displayInfromation("altTxt", "altTxt")
-      displayInfromation("name", "name")
-      displayInfromation("description", "description")
-      displayInfromation("colors", "colors")
-      displayInfromation("price", "price")
-    
+    {    
       function displayInfromation(id, data)
       {
         document.getElementById(id).innerHTML = data[i]._id
-      
     
-        document.getElementById("imageUrl").innerHTML= data[i]._id
-        document.getElementById("altTxt").innerHTML= "altTxt"
-        document.getElementById("name").innerHTML= "name"
-        document.getElementById("description").innerHTML= "description"
-        document.getElementById("colors").innerHTML= "colors"
-        document.getElementById("price").innerHTML= "price"
+        document.getElementById("imageUrl").innerHTML= data[i].imageUrl;
+        document.getElementById("altTxt").innerHTML= data[i].altTxt;
+        document.getElementById("name").innerHTML= data[i].name;
+        document.getElementById("description").innerHTML= data[i].description;
+        document.getElementById("colors").innerHTML= data[i].colors;
+        document.getElementById("price").innerHTML= data[i].price;
+      }
     }
-    }
-    
 }
 
-
 product();
-
